@@ -1,6 +1,148 @@
 body {
   margin: 0;
+  height: auto;
   background-image: url('../images/drums.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+}
+
+.title {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: #C0C0C0;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.keys {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+
+.key {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  max-width: 200px;
+  max-height: 200px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #800000;
+  transition: all 0.07s;
+}
+
+.playing {
+  transform: scale(1.1);
+  border: 4px solid #000;
+  box-shadow: 0 0 10px #C0C0C0;
+}
+
+.kbd {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.sound {
+  font-size: 24px;
+  color: #ffff;
+}
+
+
+/* media queries using bootstrap breakpoints */
+@media screen and (max-width: 360px) and (orientation: landscape){
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .key {
+    font-size: 24px;
+  }
+/*
+  #keys {
+      position: relative;
+      columns: 1;
+  } */
+
+  .d-flex {
+    margin-top: 40px;
+
+  }
+
+}
+
+
+/* small devices and landscape phones, 576px and up */
+@media screen and (min-width: 361px) and (max-width: 576px) and (orientation: landscape){
+
+  h1 {
+    font-size: 60px;
+  }
+
+  /* #keys {
+      position: relative;
+      columns: 4;
+  } */
+
+  .d-flex {
+    margin-top: 20px;
+  }
+
+
+
+}
+
+/* medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+  h1 {
+    font-size: 80px;
+  }
+
+  /* #keys {
+      position: relative;
+      columns: 3;
+
+  } */
+
+
+}
+
+/* large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+
+  h1 {
+    font-size: 100px;
+  }
+
+}
+
+/* extra large devices (large desktops, 12px and up)*/
+@media (min-width: 1200px){
+
+  h1 {
+    font-size: 120px;
+  }
+
+
 }

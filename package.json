@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/demoncowgirl/drumkit#readme",
   "devDependencies": {
+    "bootstrap": "^4.3.1",
     "express": "^4.16.4",
     "gulp": "^4.0.1",
     "gulp-sass": "^4.0.2",
